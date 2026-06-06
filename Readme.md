@@ -1,10 +1,25 @@
 <div align="center">
 
-# Cyprus 
+<img src="Assets\Edit_Gallery\Cyprus_logo1.png">
+
+<img src="Assets\Render_Gallery\Render19.png" width="400px">
+
+
 
 </div>
 
+
+
 Cyprus is 60 % mechanical split keyboard designed by Mohammad Sarfaraz aka Sappling.
+
+### Features:
+
+* This keyboard is handwired so its very affordable.
+* This keyboard features standard split.
+* Its very compact making it very portable
+* It uses magnets to connect the splits allowing fast assembly.
+* It uses Nice Nano V2(or Supermini nRF52840) with 5.4 bluetooth connectivity.
+
 
 
 ## Navigation
@@ -21,11 +36,18 @@ There is just one variant right now.
 `Cyprus HW` : Cyprus Handwired
 
 ## BOM 
+*I have only included the component which is 'specific' to my cad design*
+
+| Part  | price(INR) | price(USD) | link |
+|-------|-----|-----------|------|
+| Promicro NRF52840 | 758.00 |  7.98  | [link](https://robu.in/product/promicro-nrf52840-development-board/) |
+| 3.7V LiPo Battery   | 139.00  | 1.46  | [link](https://robocraze.com/products/witty-fox-120mah-rechargeable-3-7v-lipo-battery?_pos=6&_sid=47fff7de1&_ss=) |
+| Slide Switch | 9 | 0.095 | [link](https://robocraze.com/products/slide-switch-3-pin-2-way-spdt?_pos=1&_sid=5bdbba5e9&_ss=r) |
 
 
 ## Firmware
 
-*⚠️Note: Before you understand firmware, you need to have a basic understanding of [how keyboard matrix work](https://docs.qmk.fm/how_a_matrix_works).*
+*Note: Before you understand firmware, you need to have a basic understanding of [how keyboard matrix work](https://docs.qmk.fm/how_a_matrix_works).*
 
 This project uses [ZMK firmware](https://zmk.dev/docs) to code the board. Visit the link to read the documentation for a lot more information.
 
@@ -99,8 +121,10 @@ keymap {
 
  *  Basic Soldering skill
  *  Access to 3d Printer
+ *  A hot glue gun.
 
 #### Cad 
+*⚠️Important: I have not printed it myself so I do not gauranty that cad design would also work for you especially if you are choosing some commponent different than mine. That said, you would have to experiment with the cad design yourself.*
 
 Print the [stl files](./Production/) using a 3d printer.
 
@@ -123,12 +147,23 @@ If you just want to use the pre-compiled firmware:
 3. Copy the compiled left half `.uf2` file into this drive. The drive will automatically disconnect once the flashing is complete.
 4. Repeat the same process for the **Right** half with the right half `.uf2` file.
 
+### Poster
+
+<img src="Assets\Edit_Gallery\Edit14.png">
+
+<img src = "Assets\Edit_Gallery\Edit12.png">
 
 -------------
 
-If you like my work, follow me on instagram - [@ayysappling](https://www.instagram.com/ayysappling/)
+### Contacts 
 
------------
+If you find any error or just want to help me improve or wanna work together — 
+
+Drop the messege on my email: **itsmohammadsarfaraz@gmail.com**
+
+If you like my work, follow me on instagram and drop a dm — [@ayysappling](https://www.instagram.com/ayysappling/)
+
+----------
 
 <div align = "center" > Made with love 💛 by Mohammad Sarfaraz </div>
 
