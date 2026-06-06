@@ -1,7 +1,7 @@
 <div align="center">
 
+<img src="Assets\Edit_Gallery\Cyprus_logo1.png">
 
-![logo](Assets\Edit_Gallery\Cyprus_logo1.png)
 
 ---------
 
