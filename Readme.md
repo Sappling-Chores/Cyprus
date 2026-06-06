@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="Assets\Edit_Gallery\Cyprus_logo1.png">
+![logo](Assets\Edit_Gallery\Cyprus_logo1.png)
+
+
 
 <img src="Assets\Render_Gallery\Render19.png" width="400px">
 
@@ -132,7 +134,7 @@ Print the [stl files](./Production/) using a 3d printer.
 
   First you need to wire everything up just like this schematics here. 
 
-  ![alt](./Assets/Cyprus.svg)
+  ![alt](./Assets/Cyprus_Schematic.svg)
 
   Since I have not build it myself, I cant really show you the irl wiring photo. But if you want to know how to wire these effectively, I recommend you to watch any youtube video related to making handwire keyboard.
 
