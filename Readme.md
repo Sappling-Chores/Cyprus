@@ -56,7 +56,7 @@ This project uses [ZMK firmware](https://zmk.dev/docs) to code the board. Visit 
 
 I am going to explain basics that you need to understand in the firmware. 
 
-You assign board in file named `build.yaml`
+You assign board in file named `build.yaml` i.e. : 
 
 ``` 
 include: 
@@ -91,7 +91,7 @@ You assign column in separate .overlay files
 
 **Keymap**
 
- visit https://zmk.dev/docs/keymaps/behaviors
+ visit https://zmk.dev/docs/keymaps/behaviors for more information.
 
 Standard keymap -
 
@@ -101,21 +101,20 @@ keymap {
 
         default_layer {
             // -----------------------------------------------------------------------------------------
-            // | `   |  1  |  2  |  3  |  4  |  5  |  6  |   |  7  |  8  |  9  |  0  |  -  |  =  | BKSP |
-            // | TAB |  Q  |  W  |  E  |  R  |  T  |  Y  |   |  U  |  I  |  O  |  P  |  [  |  ]  |  \   |
-            // | CAPS|  A  |  S  |  D  |  F  |  G  |  H  |   |  J  |  K  |  L  |  ;  |  '  | ENT |
-            // | SHFT|  Z  |  X  |  C  |  V  |  B  |       |  N  |  M  |  ,  |  .  |  /  | SHFT|
-            // | CTRL| GUI | ALT | SPC |             |       | SPC | MO1 | ALT | GUI | CTRL|
+            // | `   |  1  |  2  |  3  |  4  |  5  |  6  |   |  7  |  8  |  9  |  0  |  -  |  =  |     | BKSP |
+            // | TAB |  Q  |  W  |  E  |  R  |  T  |     |   |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |  \   |
+            // | CAPS|  A  |  S  |  D  |  F  |  G  |     |   |  H  |  J  |  K  |  L  |  ;  |  '  |     |  ENT |
+            // | SHFT|     |  Z  |  X  |  C  |  V  |     |   |  B  |  N  |  M  |  ,  |  .  |  /  |     |  SHFT|
+            // | CTRL| GUI | ALT |     |     |     | SPC |   | SPC |     |     |     | MO1 | ALT | GUI | CTRL |
             // -----------------------------------------------------------------------------------------
             bindings = <
-              &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6   &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &kp EQUAL &kp BSPC
-              &kp TAB   &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y    &kp U  &kp I  &kp O  &kp P  &kp LBKT  &kp RBKT  &kp BSLH
-              &kp CLCK  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H    &kp J  &kp K  &kp L  &kp SEMI &kp SQT          &kp RET
-              &kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B           &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH       &kp RSHFT
-              &kp LCTRL &kp LGUI &kp LALT &kp SPACE                 &kp SPACE &mo 1 &kp RALT &kp RGUI &kp RCTRL
+              &kp GRAVE  &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6         &kp N7    &kp N8    &kp N9    &kp N0    &kp MINUS &kp EQUAL           &kp BSPC
+              &kp TAB    &kp Q     &kp W     &kp E     &kp R     &kp T                    &kp Y     &kp U     &kp I     &kp O     &kp P     &kp LBKT  &kp RBKT  &kp BSLH
+              &kp CLCK   &kp A     &kp S     &kp D     &kp F     &kp G                    &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT             &kp RET
+              &kp LSHFT            &kp Z     &kp X     &kp C     &kp V                    &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH            &kp RSHFT
+              &kp LCTRL  &kp LGUI  &kp LALT                                &kp SPACE      &kp SPACE                               &mo 1     &kp RALT  &kp RGUI  &kp RCTRL
             >;
-        }; };
-
+        };};
 ```
 
 ### Build and Configuration
@@ -184,13 +183,16 @@ No warranties are given. For more details, see the [full license](https://creati
 
 ----
 
+**If you want to use this design for commercial use then [Contact me](#contacts), you are more likely to get authorized that you might think.**
+
+----
 ### Contacts 
 
 If you find any error or just want to help me improve or wanna work together — 
 
 Drop the messege on my email: **itsmohammadsarfaraz@gmail.com**
 
-If you like my work, follow me on instagram and drop a dm — [@ayysappling](https://www.instagram.com/ayysappling/)
+If you like my work, follow me on instagram and say hi — [@ayysappling](https://www.instagram.com/ayysappling/)
 
 ----------
 
