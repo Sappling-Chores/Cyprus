@@ -135,12 +135,21 @@ keymap {
  *  Access to 3d Printer
  *  A hot glue gun.
 
-#### Cad and Assembly
+#### Cad
 *⚠️Important: I have not printed it myself so I do not gauranty that cad design would also work for you especially if you are choosing some commponent different than mine. That said, you would have to experiment with the cad design yourself.*
 
 Print the [stl files](./Production/) using a 3d printer.
 
-#### Steps to build the keyboard.
+#### Wiring 
+
+  First you need to wire everything up just like this schematics here. 
+
+  ![alt](./Assets/Cyprus_Schematic.svg)
+
+  Since I have not build it myself, I cant really show you the irl wiring photo. But if you want to know how to wire these effectively, I recommend you to watch any youtube video related to making handwire keyboard.
+
+
+#### Build and Assembly
 
 1. Assemble your switches on the plate of the keybaord, like this : 
 
@@ -178,15 +187,7 @@ Then use hot glue to secure them in place.
 
 *Note: If you need to access the reset and bootloader buttom of your mcu in the future, you can do it with the asigned bootloader and reset switch on the keyboard.*
 
-#### Wiring 
-
-  First you need to wire everything up just like this schematics here. 
-
-  ![alt](./Assets/Cyprus_Schematic.svg)
-
-  Since I have not build it myself, I cant really show you the irl wiring photo. But if you want to know how to wire these effectively, I recommend you to watch any youtube video related to making handwire keyboard.
-
-#### Compile and Flash
+#### Compile and Flash(Specifics)
 
 Now, you could follow the official method by zmk if you want to add your own personal touch to the firmware of your keyboard.
 
