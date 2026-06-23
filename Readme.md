@@ -41,11 +41,21 @@ There is just one variant right now.
 ## BOM 
 *I have only included the component which is 'specific' to my cad design*
 
-| Part  | price(INR) | price(USD) | link |
-|-------|-----|-----------|------|
-| Promicro NRF52840 | 758.00 |  7.98  | [link](https://robu.in/product/promicro-nrf52840-development-board/) |
-| 3.7V LiPo Battery   | 139.00  | 1.46  | [link](https://robocraze.com/products/witty-fox-120mah-rechargeable-3-7v-lipo-battery?_pos=6&_sid=47fff7de1&_ss=) |
-| Slide Switch | 9 | 0.095 | [link](https://robocraze.com/products/slide-switch-3-pin-2-way-spdt?_pos=1&_sid=5bdbba5e9&_ss=r) |
+| Part  | Quantity | price(INR) | price(USD) | link |
+|-------|----------|-----|-----------|------|
+| Promicro NRF52840 | 2 | 758.00 |  7.98  | [link](https://robu.in/product/promicro-nrf52840-development-board/) |
+| 3.7V LiPo Battery | 2 | 139.00  | 1.46  | [link](https://robocraze.com/products/witty-fox-120mah-rechargeable-3-7v-lipo-battery?_pos=6&_sid=47fff7de1&_ss=) |
+| Slide Switch | 2 | 9 | 0.095 | [link](https://robocraze.com/products/slide-switch-3-pin-2-way-spdt?_pos=1&_sid=5bdbba5e9&_ss=r) |
+| Stand off | 12 | 25 | 0.26 | [link](https://quartzcomponents.com/products/m3-x-10mm-female-to-female-nickel-plated-brass-hex-threaded-pillar-standoff-spacer-pack-of-4-pc?srsltid=AfmBOoqKSATpMRCvpfYnO_aOGEayFTTyo2ozcalroCYJ79QNntu-CT_j) |
+| Magnets | 1 | 275 | 2.90 | [link](https://www.amazon.in/ART-IFACT-4mm-Round-Disk/dp/B0GFWH1TSV?ref_=Oct_d_orecs_d_3591242031_3&pd_rd_w=NrsPx&content-id=amzn1.sym.53468083-cc20-4d00-bd56-23505c8eb8c3&pf_rd_p=53468083-cc20-4d00-bd56-23505c8eb8c3&pf_rd_r=7XY205BHY6D89JFAQNGF&pd_rd_wg=S8d2w&pd_rd_r=2415a8be-7972-48b4-95de-521e4a5035c5&pd_rd_i=B0GFWH1TSV) |
+| M3 Screws | 12 | 1.6 | 0.02 | [link](https://onlyscrews.in/products/chhd-m3-x-6mm-pack-of-22) |
+| Gateron Switches | 70 | 199 | 2.10 | [link](https://meckeys.com/shop/accessories/keyboard-accessories/key-switches/gateron-mechanical-pro-switch-5pin/?srsltid=AfmBOorgmVOZb0u9DkI4ZCt7RVFLX5Wy3gB1b4_5lnGXyiva7xzfVLfr) | 
+| Keycaps(Purple) | 1 | 1299 | 13.71 | [link](https://curiositycaps.in/products/fragrance-backlit-cherry-pbt-keycap?_pos=26&_fid=34c079692&_ss=c) | 
+| Keycaps(Blue) | 1 | 1299 | 13.71 | [link](https://curiositycaps.in/products/blue-gradient-side-backlit-cherry-pbt-keycaps?_pos=27&_fid=34c079692&_ss=c) |
+| Diode(1N4148) | 70 | 1.54 | 0.02 | [link](https://robu.in/product/1n4148-1w-zener-diode-pack-of-50/?gad_source=1&gad_campaignid=17427802703&gbraid=0AAAAADvLFWfSfYH3b6JsF08tQy6CYGKa2&gclid=CjwKCAjw3ejRBhAdEiwADkqPn-QAkLgKUPqwyf5bGNX7XTmVxYJCNFO2ZrdXqTbUgrOG83KAMbka1RoCtHYQAvD_BwE) | 
+
+
+
 
 
 ## Firmware
@@ -125,10 +135,48 @@ keymap {
  *  Access to 3d Printer
  *  A hot glue gun.
 
-#### Cad 
+#### Cad and Assembly
 *⚠️Important: I have not printed it myself so I do not gauranty that cad design would also work for you especially if you are choosing some commponent different than mine. That said, you would have to experiment with the cad design yourself.*
 
 Print the [stl files](./Production/) using a 3d printer.
+
+#### Steps to build the keyboard.
+
+1. Assemble your switches on the plate of the keybaord, like this : 
+
+![img](Assets\Assembly_1.png)
+
+2. Then do the [wiring](#wiring). However, dont connect the battery just yet.
+
+6. Then connect your MCU board to your Laptop(or System) to compile and flash the [firmware](./firmware/). Make sure that you coose the right file respective of each split.
+
+7. Then make sure that switch is off, and connect the batteries up like in the [wiring](#wiring) diagram. Again make sure that every connection is okay and then switch ON.
+
+3. Then bring both mcu board as close as possible and then press the reset button on both of them at the same time. It would connect them via bluetooth.
+
+3. then after switching OFF the slide switch, carefully place the MCU board, battery and slide switch like this: 
+
+![alt text](Assets/Assembly_2.png)
+
+you have to be carefull because you would have already connected wires at this point, so make sure every connection is okay and no wires is tangled.
+
+Then use hot glue to secure them in place.
+
+4. Then place the stand offs on the case and secure it with screws from botton side of the board , like this : 
+
+![alt text](Assets/Assembly_3.png)
+
+![alt text](Assets/Assembly_4.png)
+
+8. Then place the assembled plate on the case such that the hole made for screws aligh with the hole in the stand offs and then screw it up from top through the plate into stand offs.
+
+![alt text](Assets/Assembly_5.png)
+
+9. Then, place the magnet and secure it with hotglue. Just dont over use the glue.
+
+10. Finally, its ready.
+
+*Note: If you need to access the reset and bootloader buttom of your mcu in the future, you can do it with the asigned bootloader and reset switch on the keyboard.*
 
 #### Wiring 
 
